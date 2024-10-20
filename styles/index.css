@@ -1,8 +1,25 @@
+:root{
+    --background-color: #fff;
+    --text-color: black;
+}
+
+
+[data-theme='light'] {
+    --background-color: #fff;
+    --text-color: black;
+}
+
+[data-theme='dark'] {
+    --background-color: black;
+    --text-color: #fff;
+
+}
 
 body{
     width: 100vw;
     height: 100vh;
     position: relative;
+    background-color:var(--background-color) ;
 
 }
 
@@ -30,7 +47,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
+    background-color: var(--background-color);
 
 }
 
@@ -43,3 +60,4 @@ body{
 .card{
     margin:20px;
 }
+
